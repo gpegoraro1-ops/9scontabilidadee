@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9S Contabilidade | Consultoria e Análise Tributária</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #080e1a; color: #f1f5f9; }
+        .glass { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(16px); border: 1px solid rgba(0, 229, 255, 0.15); }
+        .glow-cyan { box-shadow: 0 0 25px rgba(0, 229, 255, 0.2); }
+        .gradient-text { background: linear-gradient(135deg, #00E5FF 0%, #7C3AED 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <!-- HEADER / HERO -->
+    <header class="w-full py-8 px-6 border-b border-slate-800 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl glass border-cyan-500/40 flex items-center justify-center glow-cyan">
+                    <span class="text-xl font-bold gradient-text">9S</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider">9S CONTABILIDADE</h1>
+                    <p class="text-xs text-slate-400 tracking-widest uppercase">Consultoria & Análise Tributária</p>
+                </div>
+            </div>
+            <button onclick="openModal()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 hover:opacity-90 transition transform hover:-translate-y-0.5 animate-pulse">
+                <i class="fa-solid fa-file-lines mr-2"></i> Preencher Formulário
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- COLUNA ESQUERDA: APRESENTAÇÃO & PILARES -->
+        <div class="lg:col-span-2 space-y-8">
+            <div class="glass p-8 rounded-3xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">ACOMPANHE A 9S</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-3 leading-tight">Conteúdo útil para o seu negócio, você <span class="gradient-text">bem informado</span>.</h2>
+                <p class="text-slate-300 text-base leading-relaxed mb-6">Juntos no presente, planejando o seu futuro. Atuação especializada em apuração de tributos, obrigações acessórias e consultoria estratégica para empresas de médio e grande porte.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
+                    <div class="flex items-center gap-3 p-3 rounded-2xl bg-slate-900/50 border border-slate-800">
+                        <i class="fa-solid fa-bullseye text-cyan-400 text-xl"></i>
+                        <span class="text-xs font-medium text-slate-200">Contabilidade com segurança</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-2xl bg-slate-900/50 border border-slate-800">
+                        <i class="fa-solid fa-users text-cyan-400 text-xl"></i>
+                        <span class="text-xs font-medium text-slate-200">Assessoria para o dia a dia</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-2xl bg-slate-900/50 border border-slate-800">
+                        <i class="fa-solid fa-lightbulb text-cyan-400 text-xl"></i>
+                        <span class="text-xs font-medium text-slate-200">Consultoria para crescimento</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PUBLICAÇÕES RECENTES / DESTAQUES DO INSTAGRAM -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-500"></i> Destaques do Instagram</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="glass p-4 rounded-2xl border-slate-800 hover:border-cyan-500/40 transition group">
+                        <div class="h-36 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center mb-3 group-hover:scale-[1.02] transition">
+                            <i class="fa-solid fa-calculator text-3xl text-cyan-400"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">Reforma Tributária (IBS/CBS)</h4>
+                        <p class="text-xs text-slate-400">Análise completa das novas diretrizes fiscais.</p>
+                    </div>
+                    <div class="glass p-4 rounded-2xl border-slate-800 hover:border-cyan-500/40 transition group">
+                        <div class="h-36 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center mb-3 group-hover:scale-[1.02] transition">
+                            <i class="fa-solid fa-chart-line text-3xl text-cyan-400"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">Planejamento Simples Nacional</h4>
+                        <p class="text-xs text-slate-400">Como otimizar a carga tributária do seu negócio.</p>
+                    </div>
+                    <div class="glass p-4 rounded-2xl border-slate-800 hover:border-cyan-500/40 transition group">
+                        <div class="h-36 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center mb-3 group-hover:scale-[1.02] transition">
+                            <i class="fa-solid fa-shield-halved text-3xl text-cyan-400"></i>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">Auditoria SPED e Obrigações</h4>
+                        <p class="text-xs text-slate-400">Segurança nas entregas mensais e anuais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUNA DIREITA: REDES SOCIAIS & CTA RÁPIDO -->
+        <div class="space-y-6">
+            <div class="glass p-6 rounded-3xl border-slate-800 text-center space-y-4">
+                <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 flex items-center justify-center text-white text-2xl shadow-lg">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <h3 class="font-bold text-lg">Siga nosso Instagram</h3>
+                <p class="text-xs text-slate-400">@9scontabilidade</p>
+                <a href="https://www.instagram.com/9scontabilidade/" target="_blank" class="block w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold transition">
+                    Acessar Perfil
+                </a>
+            </div>
+
+            <div class="glass p-6 rounded-3xl border-slate-800 text-center space-y-4">
+                <div class="w-16 h-16 mx-auto rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl shadow-lg">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <h3 class="font-bold text-lg">Curta nossa Página</h3>
+                <p class="text-xs text-slate-400">9scontabilidade</p>
+                <a href="https://www.facebook.com" target="_blank" class="block w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold transition">
+                    Acessar Facebook
+                </a>
+            </div>
+
+            <div class="glass p-6 rounded-3xl border-cyan-500/30 bg-gradient-to-b from-cyan-950/20 to-slate-900/50 text-center space-y-3">
+                <h4 class="font-bold text-sm text-cyan-300">Precisa de Atendimento Direto?</h4>
+                <p class="text-xs text-slate-300">Preencha nosso formulário oficial para iniciarmos a sua consultoria.</p>
+                <button onclick="openModal()" class="w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition">
+                    Preencher Formulário Agora
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full py-6 text-center border-t border-slate-900 text-xs text-slate-500">
+        &copy; 2026 9S Contabilidade. Todos os direitos reservados.
+    </footer>
+
+    <!-- MODAL DE FORMULÁRIO CENTRALIZADO -->
+    <div id="formModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass w-full max-w-4xl h-[85vh] rounded-3xl border border-slate-700 overflow-hidden flex flex-col shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <!-- Modal Header -->
+            <div class="p-4 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-cyan-400 animate-pulse"></div>
+                    <span class="font-bold text-sm text-slate-200">Formulário Oficial de Atendimento | 9S Contabilidade</span>
+                </div>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300 transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Modal Body (Google Form Iframe) -->
+            <div class="flex-grow w-full bg-slate-950 relative">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYPaBUbtb5ovjU2d2DoFnsKPPhlKK3l-eeIZL4T-iwN7WGCg/viewform?embedded=true" class="w-full h-full border-0" title="Formulário 9S Contabilidade">Carregando…</iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('formModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('formModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        // Fechar ao clicar fora do modal
+        window.onclick = function(event) {
+            const modal = document.getElementById('formModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
